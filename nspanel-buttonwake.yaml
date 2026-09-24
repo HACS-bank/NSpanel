@@ -1,0 +1,8 @@
+script:
+  # visual feedback for buttons
+  - id: !extend button_right_release
+    then:
+      lambda: wakeup;
+  - id: !extend button_left_release
+    then:
+      lambda: wakeup;
