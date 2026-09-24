@@ -20,7 +20,10 @@ packages:
     ref: main
     refresh: 300s
     files:
+# wake panel on hardware button press
+      - nspanel-buttonwake.yaml
+# ESPectre Motion Detection
       - nspanel-espectre.yaml
 # or
-      - nspanel-bluetooth.yaml
+      - nspanel-bluetooth.yaml # dont use with ESPectre due to interference
 ```
