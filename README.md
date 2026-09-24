@@ -21,4 +21,6 @@ packages:
     refresh: 300s
     files:
       - nspanel-espectre.yaml
+# or
+      - nspanel-bluetooth.yaml
 ```
