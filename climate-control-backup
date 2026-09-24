@@ -1,0 +1,12 @@
+# Climate Control if API down
+api:
+  on_client_connected: !extend 
+    then:
+      - lambda: |-
+          heater_relay = "0";
+          ESP_LOGV("CLIMATE", "Set heater_relay to %i", heater_relay);
+  on_client_disconnected: !extend 
+    then:
+      - lambda: |-
+          heater_relay = "1";
+          ESP_LOGV("CLIMATE", "Set heater_relay to %i", heater_relay);
