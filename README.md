@@ -14,6 +14,7 @@ packages:
     refresh: 300s
     files:
       - nspanel_esphome.yaml # Base package
+      - esphome/nspanel_esphome_addon_climate_heat.yaml
       - esphome/nspanel_esphome_addon_display_light.yaml
   remote_package_hacsbank_nspanel:
     url: https://github.com/HACS-bank/NSpanel
