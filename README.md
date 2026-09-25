@@ -25,6 +25,9 @@ As well as including this package, you will need
 
 Don't try to use with Bluetooth Proxy or BLE as they interfere with one another and will not both fit in the image
 
+## how to deploy
+
+add the following to esphome .yaml, build and deploy to panel
 ```
 packages:
   remote_package_nspanel_easy:
@@ -35,6 +38,7 @@ packages:
       - nspanel_esphome.yaml # Base package
       - esphome/nspanel_esphome_addon_climate_heat.yaml
       - esphome/nspanel_esphome_addon_display_light.yaml
+
   remote_package_hacsbank_nspanel:
     url: https://github.com/HACS-bank/NSpanel
     ref: main
