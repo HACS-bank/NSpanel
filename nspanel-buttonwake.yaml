@@ -1,3 +1,5 @@
+substitutions:
+  include_action_wake_up: true
 script:
   # visual feedback for buttons
   - id: !extend button_right_release
