@@ -1,4 +1,4 @@
-# Development of addons which can be used to extend NSpanel-Easy
+# ESPhome addons for NSpanel-Easy
 
 once these are ready and I learn how, these will be submitted to the real project. this is my testing ground, nothing here is recommended to use in production 
 
