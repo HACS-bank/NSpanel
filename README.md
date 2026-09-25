@@ -2,15 +2,22 @@
 
 once these are ready and I learn how, these will be submitted to the real project. this is my testing ground, nothing here is recommended to use in production 
 
+## local Climate control if API down
+
+concept: local climate control always running, but controlling relay0. if API goes down, change onto local control of relay1
+needs generalisation: should use a substitution to pick relay 1 or 2
+
 ## Hardware button press wakes the screen
 
 not yet useable
 
 ## Bluetooth BLE proxy
 
-working, needs more work for iBeacon to use with BPS 
+working as proxy, needs more work for iBeacon to use with BPS 
 
 ## ESPectre on NSpanel-Easy
+
+working. waiting for ESPectre v3 to be released 
 
 As well as including this package, you will need
 1. Home Assistant _ESPectre Traffic Generator_ app
