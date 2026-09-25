@@ -1,4 +1,16 @@
-# ESPectre on NSpanel-Easy
+# Development of addons which can be used to extend NSpanel-Easy
+
+once these are ready and I learn how, these will be submitted to the real project. this is my testing ground, nothing here is recommended to use in production 
+
+## Hardware button press wakes the screen
+
+not yet useable
+
+## Bluetooth BLE proxy
+
+working, needs more work for iBeacon to use with BPS 
+
+## ESPectre on NSpanel-Easy
 
 As well as including this package, you will need
 1. Home Assistant _ESPectre Traffic Generator_ app
