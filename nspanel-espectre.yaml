@@ -11,8 +11,7 @@ espectre:
   detection_algorithm: high_accuracy # lightweight
   direct_api: true
   csi_target_pps: 100
-  csi_traffic_mode: external
-  traffic_generator_mode: ping
+  traffic_generator_mode: external
   traffic_generator_target_ip: 192.168.1.2
   threshold_number:
     name: "Motion Threshold"
