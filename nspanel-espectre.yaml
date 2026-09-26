@@ -9,7 +9,7 @@ external_components:
 espectre:
   id: espectre_csi
   detection_algorithm: high_accuracy # lightweight
-  direct_api: false
+  direct_api: true
   csi_target_pps: 100
   csi_traffic_mode: external
   traffic_generator_mode: ping
