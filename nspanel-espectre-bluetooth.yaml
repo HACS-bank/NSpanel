@@ -19,7 +19,6 @@ esp32_ble_tracker:
     active: true
 
 espectre:
-  csi_traffic_mode: internal
   traffic_generator_mode: wifi_raw
   csi_target_pps: 100
   segmentation_window_size_ms: 1000
