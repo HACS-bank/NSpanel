@@ -39,8 +39,7 @@ script:
   - id: !extend boot
     then:
       - lambda: |-
-           id(espectre_csi).set_sensing_runtime(true);   
-           id(espectre_csi).recalibrate();
+           id(espectre_csi).set_sensing_runtime(true);
   - id: !extend stop_all
     then:
       - lambda: if (system_flags.tft_upload_active) { id(espectre_csi).set_sensing_runtime(false); }
