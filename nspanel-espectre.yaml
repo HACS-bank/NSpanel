@@ -1,3 +1,7 @@
+esphome:
+  build_flags:
+    - -D NSPANEL_EASY_ADDON_ESPECTRE
+
 external_components:
   - source:
       type: git

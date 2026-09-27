@@ -1,3 +1,4 @@
+# DO NOT USE WITH ESPectre
 # needs work to derive the minor value from MAC address
 esp32_ble_beacon:
   type: iBeacon

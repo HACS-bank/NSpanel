@@ -1,10 +1,15 @@
 # ESPectre co-existance Bluetooth Proxy with smart scanning (only when HA is connected)
+
 esp32:
   cpu_frequency: 240MHz
   framework:
     type: esp-idf
     sdkconfig_options:
       CONFIG_ESP_COEX_SW_COEXIST_ENABLE: n
+
+esphome:
+  build_flags:
+    - -D NSPANEL_EASY_ADDON_BLUETOOTH_PROXY
 
 bluetooth_proxy:
   active: false
@@ -32,3 +37,6 @@ api:
   on_client_disconnected:
     then:
       - esp32_ble_tracker.stop_scan:
+
+packages:
+  espectre_package: !include nspanel-espectre.yaml
