@@ -20,8 +20,6 @@ espectre:
     name: "ESPectre Motion"
     on_press:
       then:
-        - script.execute: 
-            motion_detected
         - script.execute:
             id: wakeup
             reset_timer: true
