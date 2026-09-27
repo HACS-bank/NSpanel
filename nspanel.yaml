@@ -9,5 +9,5 @@ packages:
 #   !include nspanel_esphome_addon_espectre.yaml # if not using bluetooth
 #   !include nspanel_esphome_addon_bluetooth+iBeacon.yaml # not compatible with ESPectre
 
-  climate:
-    !include nspanel_esphome_addon_climate_backup.yaml # ready to test
+#  climate:
+#    !include nspanel_esphome_addon_climate_backup.yaml # ready to test
