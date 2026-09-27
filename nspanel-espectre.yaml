@@ -33,6 +33,7 @@ espectre:
         - script.execute:
             id: refresh_relays
             relay_mask: 2
+# wait until the platform is ready before starting
 script:
   - id: !extend boot_early_routines
     then:
@@ -41,7 +42,7 @@ script:
     then:
       - lambda: |-
            id(espectre_csi).set_sensing_runtime(true);   
-          recalibrate;
+           recalibrate;
   - id: !extend stop_all
     then:
       - lambda: if (system_flags.tft_upload_active) { id(espectre_csi).set_sensing_runtime(false); }

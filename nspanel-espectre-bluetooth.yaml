@@ -1,0 +1,35 @@
+# ESPectre co-existance Bluetooth Proxy with smart scanning (only when HA is connected)
+esp32:
+  cpu_frequency: 240MHz
+  framework:
+    type: esp-idf
+    sdkconfig_options:
+      CONFIG_ESP_COEX_SW_COEXIST_ENABLE: n
+
+bluetooth_proxy:
+  active: false
+
+esp32_ble_tracker:
+  software_coexistence: false
+  scan_parameters:
+    interval: 100ms
+    window: 5ms
+    duration: 5min
+    continuous: false
+    active: true
+
+espectre:
+  csi_traffic_mode: internal
+  traffic_generator_mode: wifi_raw
+  csi_target_pps: 100
+  segmentation_window_size_ms: 1000
+  evaluation_interval_ms: 250
+  
+api:
+  on_client_connected:
+    then:
+      - esp32_ble_tracker.start_scan:
+          continuous: true
+  on_client_disconnected:
+    then:
+      - esp32_ble_tracker.stop_scan:
