@@ -6,14 +6,6 @@ esp32_ble_tracker:
     continuous: false
     active: true
     
-#esp32_ble_beacon:
-#  type: iBeacon
-#  uuid: fde3b150-2f64-43ba-aee9-867f75ee4a6f
-#  major: 1
-#  minor: 22
-#  min_interval: 500ms
-#  max_interval: 1000ms
-  
 api:
   on_client_connected:
     then:
@@ -22,3 +14,4 @@ api:
   on_client_disconnected:
     then:
       - esp32_ble_tracker.stop_scan:
+      

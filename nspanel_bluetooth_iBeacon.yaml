@@ -1,0 +1,8 @@
+# needs work to derive the minor value from MAC address
+esp32_ble_beacon:
+  type: iBeacon
+  uuid: fde3b150-2f64-43ba-aee9-867f75ee4a6f
+  major: 1
+  minor: 22
+  min_interval: 500ms
+  max_interval: 1000ms
