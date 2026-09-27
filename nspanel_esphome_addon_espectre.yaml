@@ -1,6 +1,4 @@
-esphome:
-  build_flags:
-    - -D NSPANEL_EASY_ADDON_ESPECTRE
+
 
 external_components:
   - source:
@@ -59,3 +57,6 @@ script:
           chip_states[CHIP_IDX_RELAY2].visible = motion;
           chip_render(CHIP_IDX_RELAY2);
           
+esphome:
+  build_flags:
+    - -D NSPANEL_EASY_ADDON_ESPECTRE

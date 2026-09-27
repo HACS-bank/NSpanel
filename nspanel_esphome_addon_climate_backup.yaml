@@ -1,7 +1,7 @@
 # Climate Control if API down
 substitutions:
   backup_heater_relay: 1 # 0 if not required, 1 or 2
-  backup_cooler_relay: 2 # 0 if not required, 1 or 2
+  backup_cooler_relay: 0 # 0 if not required, 1 or 2
 
 esphome:
   build_flags:

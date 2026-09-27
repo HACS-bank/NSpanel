@@ -39,4 +39,4 @@ api:
       - esp32_ble_tracker.stop_scan:
 
 packages:
-  espectre_package: !include nspanel-espectre.yaml
+  espectre_package: !include nspanel_esphome_addon_espectre.yaml

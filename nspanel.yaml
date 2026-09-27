@@ -1,7 +1,13 @@
 packages:
-#  espectre: !include nspanel-espectre.yaml
-  buttonwake: !include nspanel-buttonwake.yaml
-#  bluetooth: !include nspanel-bluetooth.yaml # if not using espectre
-  bluetooth: !include nspanel-espectre-bluetooth.yaml # includes espectre
-#  ibeacon: !include nspanel_bluetooth_iBeacon.yaml # not compatible with ESPectre
-  climate: !include nspanel_esphome_addon_climate_backup.yaml # ready to test
+
+  buttonwake: 
+    !include nspanel_esphome_addon_buttonwake.yaml
+
+  radiowaves:
+    !include nspanel_esphome_addon_espectre+bluetooth.yaml # includes espectre
+#   !include nspanel_esphome_addon_bluetooth.yaml # if not using espectre
+#   !include nspanel_esphome_addon_espectre.yaml # if not using bluetooth
+#   !include nspanel_esphome_addon_bluetooth+iBeacon.yaml # not compatible with ESPectre
+
+  climate:
+    !include nspanel_esphome_addon_climate_backup.yaml # ready to test
