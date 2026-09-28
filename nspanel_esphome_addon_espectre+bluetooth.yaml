@@ -7,10 +7,6 @@ esp32:
     sdkconfig_options:
       CONFIG_ESP_COEX_SW_COEXIST_ENABLE: n
 
-esphome:
-  build_flags:
-    - -D NSPANEL_EASY_ADDON_BLUETOOTH_PROXY
-
 bluetooth_proxy:
   active: false
 
@@ -29,14 +25,8 @@ espectre:
   segmentation_window_size_ms: 1000
   evaluation_interval_ms: 250
   
-api:
-  on_client_connected:
-    then:
-      - esp32_ble_tracker.start_scan:
-          continuous: true
-  on_client_disconnected:
-    then:
-      - esp32_ble_tracker.stop_scan:
+
 
 packages:
-  espectre_package: !include nspanel_esphome_addon_espectre.yaml
+  espectre_package:  !include nspanel_esphome_addon_espectre.yaml
+  bluetooth_package: !include nspanel_esphome_addon_bluetooth.yaml

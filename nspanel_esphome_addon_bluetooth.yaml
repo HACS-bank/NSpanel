@@ -14,4 +14,7 @@ api:
   on_client_disconnected:
     then:
       - esp32_ble_tracker.stop_scan:
-      
+
+esphome:
+  build_flags:
+    - -D NSPANEL_EASY_ADDON_BLUETOOTH    
