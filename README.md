@@ -42,7 +42,7 @@ packages:
   remote_package_hacsbank_nspanel:
     url: https://github.com/HACS-bank/NSpanel
     ref: main
-    refresh: 300s
+    refresh: always
     files:
       - nspanel.yaml
 ```
