@@ -1,7 +1,6 @@
-# ESPectre co-existance Bluetooth Proxy with smart scanning (only when HA is connected)
-
+# ESPectre co-existance Bluetooth Proxy with smart scanning 
 esp32:
-  cpu_frequency: 240MHz
+#  cpu_frequency: 240MHz
   framework:
     type: esp-idf
     sdkconfig_options:
@@ -25,8 +24,6 @@ espectre:
   segmentation_window_size_ms: 1000
   evaluation_interval_ms: 250
   
-
-
 packages:
   espectre_package:  !include nspanel_esphome_addon_espectre.yaml
   bluetooth_package: !include nspanel_esphome_addon_bluetooth.yaml

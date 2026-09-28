@@ -7,3 +7,6 @@ esp32_ble_beacon:
   minor: 22
   min_interval: 500ms
   max_interval: 1000ms
+
+packages:
+  nspanel_esphome_addon_bluetooth: !include nspanel_esphome_addon_bluetooth.yaml
