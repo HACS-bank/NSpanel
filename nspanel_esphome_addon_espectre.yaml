@@ -1,4 +1,4 @@
-
+## Include ESPectre CSI motion detection as a wake-up-the-screen addon
 
 external_components:
   - source:
