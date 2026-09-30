@@ -1,4 +1,4 @@
-# ESPectre co-existance Bluetooth Proxy with smart scanning 
+# ESPectre co-existance with Bluetooth
 esp32:
   framework:
     type: esp-idf
