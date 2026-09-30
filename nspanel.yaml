@@ -1,13 +1,12 @@
+substitutions:
+  wakeup_with_button_press_dimmed: true
 packages:
 
-  buttonwake: 
-    !include nspanel_esphome_addon_buttonwake.yaml
+#  buttonwake: 
+#    !include nspanel_esphome_addon_buttonwake.yaml
 
   radiowaves:
-    !include nspanel_esphome_addon_espectre+bluetooth.yaml # includes espectre
-#   !include nspanel_esphome_addon_bluetooth.yaml # if not using espectre
-#   !include nspanel_esphome_addon_espectre.yaml # if not using bluetooth
-#   !include nspanel_esphome_addon_bluetooth+iBeacon.yaml # not compatible with ESPectre
+    !include nspanel_esphome_addon_espectre+bluetooth.yaml 
 
-#  climate:
-#    !include nspanel_esphome_addon_climate_backup.yaml # ready to test
+  climate:
+    !include nspanel_esphome_addon_climate_backup.yaml # ready to test
