@@ -1,5 +1,0 @@
-substitutions:
-  wakeup_with_button_press_dimmed: true
-
-packages:
-  radiowaves: !include nspanel_esphome_addon_espectre+bluetooth.yaml
